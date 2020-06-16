@@ -9,4 +9,4 @@ def index(request):
 
 
 def about(request):
-    return render(request, 'about/index.html')
+    return render(request, 'pages/about.html')
