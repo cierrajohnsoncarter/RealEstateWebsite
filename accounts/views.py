@@ -32,7 +32,7 @@ def register(request):
                     # Automatically login user after registration
                     auth.login(request, user)
                     messages.success(
-                        request, 'You are now logged in')
+                        request, 'Welcome {}'.format(first_name))
                     return redirect('index')
         else:
             messages.error(request, 'Passwords do not match')

@@ -1,7 +1,12 @@
 {% extends 'base.html' %} {% load humanize %} {% block content %}
 
 <!-- Showcase -->
-<section id="showcase">
+<section
+  id="showcase"
+  style="
+    background: url(../static/img/showcase.jpg) no-repeat top center fixed;
+  "
+>
   <div class="container text-center">
     <div class="home-search p-5">
       <div class="overlay p-5">
@@ -82,6 +87,8 @@
     </div>
   </div>
 </section>
+<!--Alerts-->
+{% include 'partials/_alerts.html' %}
 
 <!-- Listings -->
 <section id="listings" class="py-5">
@@ -154,7 +161,13 @@
   </div>
 </section>
 
-<section id="services" class="py-5 bg-secondary text-white">
+<section
+  id="services"
+  style="
+    background: url(../static/img/building.jpg) no-repeat top center fixed;
+  "
+  class="py-5 bg-secondary text-white"
+>
   <div class="container">
     <div class="row text-center">
       <div class="col-md-4">
