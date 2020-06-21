@@ -14,5 +14,5 @@ class Contact(models.Model):
     contact_date = models.DateTimeField(default=datetime.now, blank=True)
     user_id = models.IntegerField(blank=True)
 
-    def__str__(self):
-    return self.name
+    def __str__(self):
+        return self.name
